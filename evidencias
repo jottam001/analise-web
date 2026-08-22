@@ -1,0 +1,16 @@
+# Evidências da aba Network
+
+Coloque nesta pasta somente capturas reais obtidas durante a sua própria análise no navegador.
+
+## Nomes recomendados
+
+- `01-network-fetch-xhr.png`
+- `02-pesquisa-github.png`
+- `03-request-headers.png`
+
+## Checklist antes de publicar
+
+- Conferir se o endereço exibido não contém informações sensíveis.
+- Ocultar cookies, tokens e cabeçalhos de autorização.
+- Verificar se não há e-mail, nome completo ou outros dados pessoais desnecessários.
+- Manter visíveis apenas as informações técnicas necessárias para comprovar a atividade.
