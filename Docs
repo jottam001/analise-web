@@ -1,0 +1,64 @@
+# 3. Captura de dados no navegador
+
+A análise de tráfego foi planejada utilizando a aba **Network** das ferramentas de desenvolvimento do navegador.
+
+## Procedimento
+
+1. Acessar o GitHub pelo navegador.
+2. Abrir o DevTools com `F12` ou pela opção **Inspecionar**.
+3. Selecionar a aba **Network**.
+4. Ativar o filtro **Fetch/XHR**.
+5. Realizar ações como pesquisa, navegação entre repositórios e abertura de conteúdos.
+6. Observar as requisições geradas em tempo real.
+7. Selecionar requisições relevantes e analisar campos como método, status, URL, headers, payload e response.
+
+## Evidências sugeridas
+
+- Figura 1: lista de requisições com o filtro Fetch/XHR ativo.
+- Figura 2: requisições geradas após uma pesquisa no GitHub.
+- Figura 3: detalhes de uma requisição selecionada na seção Headers ou Response.
+
+## Observação de segurança
+
+Nunca publique capturas contendo tokens, cookies de sessão, credenciais, chaves de API ou informações pessoais.
+
+# 2. Mapeamento da arquitetura base
+
+O GitHub pode ser compreendido a partir do modelo cliente-servidor.
+
+## Cliente (Front-end)
+
+### Renderização da interface
+
+O navegador apresenta páginas de repositórios, arquivos, issues, pull requests, menus e formulários. Tecnologias de front-end são responsáveis por estruturar e atualizar esses componentes visuais.
+
+### Captura de interações
+
+O front-end registra ações como cliques, digitação, pesquisas e envio de formulários. Quando necessário, essas ações são convertidas em requisições destinadas aos serviços da plataforma.
+
+## Servidor (Back-end)
+
+### Autenticação e autorização
+
+O servidor identifica o usuário e verifica suas permissões antes de permitir operações como edição de arquivos, acesso a repositórios privados ou alteração de configurações.
+
+### Processamento e persistência
+
+O back-end aplica regras de negócio, consulta ou altera dados e devolve respostas ao navegador. Essa camada também contribui para a integridade e segurança das informações processadas.
+
+## APIs
+
+As APIs atuam como mecanismos estruturados de comunicação entre cliente e servidor, permitindo que o navegador solicite ou envie informações de forma controlada.
+
+# 1. Escolha da aplicação web
+
+A aplicação escolhida para a análise foi o **GitHub**, uma plataforma amplamente utilizada para hospedagem, gerenciamento e colaboração em projetos de desenvolvimento de software.
+
+Seu principal objetivo de negócio é oferecer infraestrutura e ferramentas para que desenvolvedores, equipes e organizações armazenem código, controlem versões, acompanhem alterações e colaborem em projetos.
+
+Entre as ações centrais realizadas por usuários estão:
+
+1. Criar, acessar e gerenciar repositórios.
+2. Realizar commits, uploads e alterações em arquivos.
+3. Criar e acompanhar issues e pull requests.
+4. Pesquisar projetos, seguir repositórios e acompanhar notificações.
